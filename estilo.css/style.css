@@ -101,13 +101,24 @@ header{
     grid-area: header;
     display: flex;
     justify-content: center;
+    align-items: center;
    
 }
 .h2{
     grid-area: h2;
+}
+section p{
+    display: block;
     display: flex;
     justify-content: center;
-   
+    align-items: center;
+}
+    
+section h2{
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 nav{grid-area: nav;
     display: flex;
