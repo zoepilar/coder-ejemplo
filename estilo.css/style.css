@@ -84,7 +84,7 @@ nav ul li a{
 .inicio{
     display: grid;
     grid-template-columns:repeat(3, 1fr);
-    grid-template-rows:repeat(4, 1fr);
+    grid-template-rows: 8% 2fr 2fr 2fr;
     grid-template-areas: 
     "header header header"
     "h1 h1 h1"
@@ -113,7 +113,6 @@ section p{
     justify-content: center;
     align-items: center;
 }
-    
 section h2{
     display: block;
     display: flex;
@@ -125,3 +124,36 @@ nav{grid-area: nav;
     justify-content: center;
     justify-content: space-around;
 }
+/*pagina de contacto*/
+ /*grid*/
+.contacto{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 4fr 4fr;
+    grid-template-areas: 
+    "header header header"
+    "h1 h1 h1" 
+    "iconos iconos iconos";
+    /*flex*/
+}
+header{
+    grid-area: header;
+}
+h1{
+    grid-area: h1;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.iconos{
+grid-area: iconos;   
+}
+.iconos a{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+  
+}
+   
