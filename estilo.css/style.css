@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.inicio{
+background-image: url(../img/modeloaccesorios.jpg);
+background-size: cover;
+height: 500px;
+transition: 1s;
+}
+
+body{ background-color: aliceblue;}
+
+header{
+    font: 1em sans-serif;
+    text-align:  center
+
+     
+}
+
+img{ width: 20%;
+}
+
+video{
+    width: 20%;
+}
+
+header{
+    border-bottom: 1px solid black;
+    position: sticky;
+    top: 0%;
+    
+}
+header nav ul li a{
+    text-decoration: none;
+
+}
+header nav ul li { list-style-type: none;}
+a{
+    color: black;
+}
+p{
+    font-family: 'Dosis', sans-serif;
+    color: black;
+   
+}
+ol li a{
+    list-style-type: none;
+}
+/*iconos de contacto*/
+.iconos{
+width: 100%;
+display:flex;
+justify-content:center;
+flex-flow: row;
+}
+.nombre {
+    text-decoration: none;
+    font-size: 25px;
+    padding: 10px;
+    border: 1px solid black;
+}
+/*flexbox*/
+ul{
+    display: flex;
+    justify-content: center;
+}
+ul li{
+    margin: 2%;
+}
+
+/*primera pagina*/
+
+nav ul{
+    color: black;
+    list-style: none;
+}
+nav ul li a{
+  text-decoration: none;
+}
+
+/*grid*/
+.inicio{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows:repeat(4, 1fr);
+    grid-template-areas: 
+    "header header header"
+    "h1 h1 h1"
+    "h2 h2 h2"
+    "nav nav nav";
+/*flex y grid*/
+}
+h1{
+grid-area: h1;
+display: flex;
+justify-content: center;
+}
+header{
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+   
+}
+.h2{
+    grid-area: h2;
+    display: flex;
+    justify-content: center;
+   
+}
+nav{grid-area: nav;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
